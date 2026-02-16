@@ -1,0 +1,15 @@
+let btn = document.querySelector("#btn");
+let curr = "light";
+
+btn.addEventListener("click", () => {
+    if (curr === "light") {
+        curr="dark"
+        document.body.style.background="black"
+    }
+    else {
+        curr="light"
+        document.body.style.background="white"
+    }
+    console.log(curr)
+})
+
